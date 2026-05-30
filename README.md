@@ -1,10 +1,10 @@
 # Interactive Backup Management System
 
-A Linux command-line application written in C for automatically creating and managing directory backups.
+A command-line application written in C for automatically creating and managing directory backups on Linux.
 
-The program allows users to back up a selected source directory to one or more target locations. After the initial copy is completed, the source is monitored in real time using `inotify`, and all changes are mirrored in the corresponding backup directories.
+The program allows users to back up a selected source directory to one or more target locations. After the initial copy is completed, the source is monitored in real time, and all changes are mirrored in the corresponding backup directories.
 
-The application works in interactive mode, allowing users to start new backups, stop selected ones, display active backups, and restore data from a chosen backup location. It was developed as part of an Operating Systems course and demonstrates practical use of POSIX system programming.
+The application works in an interactive mode, allowing users to start new backups, stop selected processes, display active backups, and restore data from a chosen backup location. It was developed as part of an Operating Systems course and demonstrates practical use of POSIX system programming, process management, filesystem operations, signal handling, and `inotify`-based monitoring.
 
 ## Available Commands
 
