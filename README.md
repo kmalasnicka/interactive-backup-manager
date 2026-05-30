@@ -6,6 +6,14 @@ The program allows users to back up a selected source directory to one or more t
 
 The application works in an interactive mode, allowing users to start new backups, stop selected processes, display active backups, and restore data from a chosen backup location. It was developed as part of an Operating Systems course and demonstrates practical use of POSIX system programming, process management, filesystem operations, signal handling, and `inotify`-based monitoring.
 
+## Usage
+
+```sh
+./backup-manager
+```
+
+After starting, the program prints the list of available commands and waits for input. Directory paths containing spaces must be wrapped in single or double quotes, e.g. `add "/my dir" "/backup dir"`.
+
 ## Available Commands
 
 ### Add a backup
