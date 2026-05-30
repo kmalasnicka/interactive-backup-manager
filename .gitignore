@@ -1,0 +1,3 @@
+*.o
+backup-manager
+.DS_Store
