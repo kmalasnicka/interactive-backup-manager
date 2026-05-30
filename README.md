@@ -43,7 +43,14 @@ Displays all currently active backup processes together with their source path, 
 restore <source_path> <target_path>
 ```
 
-Restores the source directory from the selected backup. Files present in the backup but missing or changed in the source are copied back, and files present in the source but absent from the backup are deleted. Only files that differ are copied, minimizing unnecessary I/O. If the backup is actively running, it is stopped before restoration begins. The command is blocking — the prompt returns only after restoration completes.
+Restores the source directory from the selected backup:
+
+- Files present in the backup but missing or changed in the source are copied back.
+- Files present in the source but absent from the backup are deleted.
+- Only files that differ (by size or modification time) are copied, minimizing unnecessary I/O.
+- Symbolic link targets are adjusted back to point to the source tree.
+- If the backup is actively running, it is stopped before restoration begins.
+- The command is **blocking** — the prompt returns only after restoration completes.
 
 ### Show help
 
